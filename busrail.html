@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="utf-8" />
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+
+	<!--<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=medium-dpi" />-->
+
+	<script src="js/jquery/jquery-1.8.3.min.js"></script>
+	<script src="phonegap.js"></script>
+	<script src="js/index.js"></script>
+	<script src="js/jquery/jquery.mobile-1.2.1.min.js"></script>
+
+	<!--<script type="text/javascript" src="js/map.js"></script>-->
+	<link rel="stylesheet" type="text/css" href="css/flat_ui/jquery.mobile.flatui.css" />
+	<link rel="stylesheet" type="text/css" href="css/themes/ie511.css" />
+	<link rel="stylesheet" type="text/css" href="css/main.css" />
+	<!-- detect connection -->
+	<script type="text/javascript" src="js/reachability.js"></script>
+	<style type="text/css">
+.ui-header .ui-title {
+	margin-left: 1.8em !important;
+}
+</style>
+	<title>IE511</title>
+	</head>
+	<body>
+    <div data-role="page" id="busrail">
+      <div data-role="header" class="appheader">
+        <div class="logo"><a href="index.html">IE511</a></div>
+        <h1>Bus/Rail Providers</h1>
+      </div>
+      <div data-role="content" id="busrailcontent">
+        <p>Select from the drop-down lists below</p>
+        <select id="county" data-theme="a">
+          <option value="">Select county from the list below</option>
+            <option value="1">Los Angeles</option>
+            <option value="2">Orange</option>
+            <option value="3">Riverside</option>
+            <option value="4">San Bernardino</option>
+            <option value="5">San Diego</option>
+            <option value="6">Ventura</option>
+        </select>
+        <select id="city" data-theme="a">
+          <option value="">Select city from the list below</option>
+        </select>
+        <select id="agency" data-theme="a">
+          <option value="">Select agency from the list below</option>
+        </select>
+      </div>
+      <div data-role="footer" data-position="fixed">
+        <div data-role="navbar">
+          <ul>
+            <li><a href="#home" data-rel="back" onclick="returnHome(); triggerAlert('back'); trackButton('bus/rail - back');">Back</a></li>
+          </ul>
+        </div>
+      </div>
+      <script type="text/javascript">
+$( document ).on( "pageinit", "#busrail", function( event ) {
+		
+			
+		
+        currentPageID = "busrail";
+
+        // Back button logic
+        //$('#busrail .ui-footer a[data-rel="back"]').on('click', busrailBack);
+        //document.addEventListener('backbutton', busrailBack, false);
+
+        var transitUrl = 'http://www.ie511.org/transitdata.aspx';
+		var citiesUrl = 'http://cloud.ie511.org/bus-rail-providers/cities';
+		var agencyUrl = 'http://cloud.ie511.org/bus-rail-providers/agencies';
+		var agencyDetailUrl = 'http://cloud.ie511.org/bus-rail-providers/agency/';
+        var oldContentHtml; // variable for use with back button
+
+       
+		// Initialize 
+        fillTransitData(JSON.parse(window.localStorage.getItem('cities_data')), 'city');
+        fillTransitData(JSON.parse(window.localStorage.getItem('agency_data')), 'agency');
+        
+      // Handle select change events
+        $('#county').change(function() {
+       
+	        var val = $(this).val(),
+				  city_val = $('#city').val();
+			
+            $.get(citiesUrl, { county: val }, function(data) {
+                fillTransitData(data, 'city');
+            });
+			
+            $.get(agencyUrl, {  county: val , city: city_val }, function(data) {
+                fillTransitData(data, 'agency');
+            });
+       
+	    });
+		
+       $('#city').change(function() {
+            var val = $(this).val(),
+				  county_val = $('#county').val();
+			
+		
+            $.get(agencyUrl, { county: county_val , city: val }, function(data) {
+                fillTransitData(data, 'agency');
+            });
+			
+        });
+          $('#agency').change(function() {
+            var val = $('#city').val(),
+				  county_val = $('#county').val();
+			
+			window.localStorage.setItem('cur_agency_id', $(this).val());
+			
+           $.get(agencyUrl, { county: county_val , city: val }, function(data) {
+                showAgency(data);
+            });
+			
+        }); /**/
+
+        // Fill data for #selector from transit data request
+        function fillTransitData(data, selector) {
+			
+			 var element = $('#'+selector);
+
+            // Remove old items
+            element.children('option').each(function(index, value) {
+                if (index != 0) {
+                    $(this).remove();
+                }
+            });
+			
+			
+			if (data != null) {
+                $.each(data, function(i, data){
+                    element.append('<option value="' + data.id + '">' + data.name + '</option>');
+                });
+            }
+
+			$( '#'+selector ).selectmenu( "refresh", true );
+        }
+
+        // Get the HTML for the selected agency and show the details on the page
+        function showAgency(data) {
+            /*var arrData      = data.split("%%");
+            var citiesServed    = arrData[0].split("|");
+            var agencyData   = arrData[1].split("|");
+            var returnText = "<h2>" + agencyData[0] + "</h2>";
+            returnText += "<div class='busrailproviders_container'>";
+            returnText += "<div class='blockboth'><p><b>Cities:&nbsp;</b><span class='small'>";
+            for (o = 1; o < citiesServed.length; o++) {
+                returnText += citiesServed[o];
+                if ((o + 1) < citiesServed.length) {
+                    returnText += ", ";
+                }
+            }
+            returnText += "</span></p></div>";
+            if (agencyData[1].length > 0) {
+                returnText += "<div class='blockboth'><p><b>Phone:&nbsp;</b><span class='small'><a href='tel:" + agencyData[1] + "'>" + agencyData[1] + "</a></span><br /><br /></p><br /></div>";
+            }
+
+
+            returnText += "</div>";*/
+            //window.location ="app_busrail_2.aspx?page=2&load="+encodeURIComponent(returnText);
+            
+			
+			
+           // oldContentHtml = $('#busrailcontent').html();
+			$.each(data, function(i, data){
+				
+				if(window.localStorage.getItem('cur_agency_id') == data.id) {
+	
+					// Update content div
+					$('#busrailcontent').html("<h2>" + data.name + "</h2><div class='blockboth'><p><b>Cities Served:&nbsp;</b><span class='small'>" + data.cities_served + "</span></p></div><div class='blockboth'><p><b>Phone:&nbsp;</b><span class='small'><a href='tel:" + data.phone + "'>" + data.phone + "</a></span><br /></p></div>");
+					
+				}
+			}); 
+		  
+            //$.mobile.changePage('busrail.html#agency');
+
+        }
+
+    });
+</script> 
+    </div>
+</body>
+</html>

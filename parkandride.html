@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; font-src 'self' http://fonts.gstatic.com https://fonts.gstatic.com;
+    script-src 'self' 'unsafe-inline' 'unsafe-eval'  https://maps.google.com https://mts0.googleapis.com https://mts1.googleapis.com https://maps.gstatic.com https://maps.googleapis.com https://connect.facebook.net http://google-analytics.com https://google-analytics.com http://ajax.googleapis.com https://ajax.googleapis.com http://cdnjs.cloudflare.com https://cdnjs.cloudflare.com; connect-src 'self' https://maps.googleapis.com http://cloud.ie511.org https://cloud.ie511.org http://dev.ie511.org https://dev.ie511.org http://www.ie511.org https://www.ie511.org; img-src *; style-src 'self' 'unsafe-inline' http://fonts.googleapis.com https://fonts.googleapis.com; frame-src  gap://ready http://*.facebook.com https://www.facebook.com http://www.facebook.com https://*.facebook.com;
+        " >
+
+    <!--<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=medium-dpi" />-->     
+
+    <script src="js/jquery/jquery-1.8.3.min.js"></script>
+    <script src="js/jquery/jquery.mobile-1.2.1.min.js"></script>
+    <script src="phonegap.js"></script>
+    <script src="cordova.js"></script>
+    <script src="GAPlugin.js"></script>
+    <script src="js/index.js"></script>
+
+    
+    <!--<script type="text/javascript" src="js/map.js"></script>-->
+    <link rel="stylesheet" type="text/css" href="css/flat_ui/jquery.mobile.flatui.css" />
+    <link rel="stylesheet" type="text/css" href="css/themes/ie511.css" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <!-- detect connection -->    
+    <script type="text/javascript" src="js/reachability.js"></script>
+	<style type="text/css">
+	.ui-header .ui-title { margin-left: 1.8em !important; }
+	</style>
+    <title>IE511</title>
+</head>
+<body>
+<div data-role="page" id="parkandride">
+    
+
+
+    <div data-role="header">
+        <div class="logo"><a href="index.html" data-ajax="false"><!--IE511--></a></div>
+        <h1>Park and Ride</h1>
+    </div>
+    <div data-role="content" id="map_canvas"><p class="status">Loading map...</p></div>
+    <div data-role="footer" data-position="fixed">
+        <div data-role="navbar">
+            <ul>
+                <li><a href="index.html" data-ajax="false" data-rel="back" onclick="trackButton('park and ride - back');">Back</a></li>
+            </ul>
+        </div>
+    </div>
+
+<!-- maps -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBguLsDmN-MeFjoP4iMEWTzeOtLeeBf7_A"></script>
+<script src="js/markermanager.js"></script>
+<script type="text/javascript" src="js/googlemap.js"></script>
+    <script type="text/javascript" src="js/parkandridemap.js"></script>
+
+<script type="text/javascript">
+$( document ).on( "pageinit", "#parkandride", function( event ) {
+
+
+	currentPageID = "parkandride";
+	map = new ParkAndRideMap();
+
+    var saved_coords = JSON.parse(localStorage.getItem("saved_coords"));
+
+    if (saved_coords !== null && saved_coords.hasOwnProperty('coords')){
+        map.initialize(saved_coords);
+    }
+    else
+    {
+        map.initialize();//map will use INITIAL_LONGITUDE Y
+    }
+	
+//    var t = setTimeout(checkForParkAndRideMapLoad, 3000);
+
+});
+		
+function checkForParkAndRideMapLoad() {
+	if($('#map_canvas').html() == '<p class="status">Loading map...</p>') {
+			document.location = "parkandride.html";
+	}
+}
+
+</script>
+</div>
+</body>
+</html>

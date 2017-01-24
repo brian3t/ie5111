@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' *; font-src 'self' http://fonts.gstatic.com https://fonts.gstatic.com;
+    script-src 'self' 'unsafe-inline' 'unsafe-eval' * https://maps.google.com https://mts0.googleapis.com https://mts1.googleapis.com https://maps.gstatic.com https://maps.googleapis.com https://connect.facebook.net http://google-analytics.com https://google-analytics.com http://ajax.googleapis.com https://ajax.googleapis.com http://cdnjs.cloudflare.com https://cdnjs.cloudflare.com; connect-src 'self' https://maps.googleapis.com http://cloud.ie511.org https://cloud.ie511.org http://dev.ie511.org https://dev.ie511.org http://www.ie511.org https://www.ie511.org; img-src *; style-src 'self' 'unsafe-inline' http://fonts.googleapis.com https://fonts.googleapis.com; frame-src  gap://ready http://*.facebook.com https://www.facebook.com http://www.facebook.com https://*.facebook.com;
+        " >
+    <!--<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=medium-dpi" />-->
+
+    <script src="js/jquery/jquery-1.8.3.min.js"></script>
+    <script src="js/jquery/jquery.mobile-1.2.1.min.js"></script>
+    <script src="phonegap.js"></script>
+    <script src="cordova.js"></script>
+    <script src="js/index.js"></script>
+
+    <!-- maps -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBguLsDmN-MeFjoP4iMEWTzeOtLeeBf7_A"></script>
+    <script src="js/markermanager.js"></script>
+    <script type="text/javascript" src="js/googlemap.js"></script>
+    <script type="text/javascript" src="js/parkandridemap.js"></script>
+    <!--<script type="text/javascript" src="js/map.js"></script>-->
+    <link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.2.1.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/themes/ie511.css" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <!-- carpool stuff -->
+    <script type="text/javascript" src="js/iscroll.js"></script>
+    <!-- detect connection -->
+    <script type="text/javascript" src="js/reachability.js"></script>
+
+    <title>IE511</title>
+</head>
+<body>
+    <div data-role="page" id="home">
+        <div class="wrapper">
+            <div data-role="header">
+				<div class="logo">
+                    <!--IE511 - IE511.org-->
+                </div>
+            </div>
+            <div data-role="content">
+                <div data-role="controlgroup" id="main_menu">
+                    <a href="traffic2.html?mode=sr91" data-ajax="false" data-role="button" onclick="trackMenu('home - traffic');"><img src="images/icon_construction.png" /> 91 Alert</a>
+                    <a href="traffic2.html?mode=i10" data-ajax="false" data-role="button" onclick="trackMenu('home - traffic');"><img src="images/icon_construction.png" /> I-10 Pavement Project</a>
+                    <a href="traffic2.html" data-ajax="false" data-role="button" onclick="trackMenu('home - traffic');"><img src="images/icon_traffic.png" /> Real-Time Traffic</a>
+                    <a href="busrail.html" data-ajax="false" data-role="button" onclick="trackMenu('home - busrail');"><img src="images/icon_busrail.png" /> Bus/Rail Providers</a>
+                    <a href="parkandride.html" data-ajax="false" data-role="button" onclick="trackMenu('home - pnr');"><img src="images/icon_pnr.png" /> Park and Ride Map</a>
+                    <!--<a href="carpool.html" data-role="button" onclick="trackMenu('home - carpool');"><img src="images/icon_carpool.png" /> Carpool Lane Map</a>-->
+                    <a href="rideshare.html" data-ajax="false" data-role="button" onclick="trackMenu('home - rideshare');"><img src="images/icon_rideshare.png" /> Rideshare Information</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,1567 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+
+
+<Points>
+<LON>-117.49809</LON>
+<LAT>34.1345405578613</LAT>
+<TITLE>Construction</TITLE>
+<LOCATION>SB I-15: Expect considerable delays due to freeway construction. </LOCATION>
+<START>9:36 AM</START>
+<END>9:44 AM</END>
+<TYPE>8</TYPE>
+</Points>
+
+
+<Points>
+<LON>0</LON>
+<LAT>0</LAT>
+<TITLE>TADV-Traffic Advisory</TITLE>
+<LOCATION>  Media </LOCATION>
+<START>12:00 AM</START>
+<END>11:55AM</END>
+<TYPE>1</TYPE>
+</Points>
+
+
+<Points>
+<LON>-121.80588</LON>
+<LAT>38.212718963623</LAT>
+<TITLE>CZP-Assist with Construction</TITLE>
+<LOCATION>  Sr113 / Flannery Rd </LOCATION>
+<START>7:00 AM</START>
+<END>7:00AM</END>
+<TYPE>1</TYPE>
+</Points>
+
+
+<Points>
+<LON>-121.38411</LON>
+<LAT>36.4627990722656</LAT>
+<TITLE>CZP-Assist with Construction</TITLE>
+<LOCATION>  Us101 N / Us101 N Soledad Prison Rd Ofr </LOCATION>
+<START>5:26 AM</START>
+<END>9:40AM</END>
+<TYPE>1</TYPE>
+</Points>
+
+
+<Points>
+<LON>-121.63583</LON>
+<LAT>36.6555595397949</LAT>
+<TITLE>MZP-Assist CT with Maintenance</TITLE>
+<LOCATION>  Blanco Cir / Blanco Rd </LOCATION>
+<START>8:14 AM</START>
+<END>8:14AM</END>
+<TYPE>1</TYPE>
+</Points>
+
+
+<Points>
+<LON>-120.86784</LON>
+<LAT>35.4042282104492</LAT>
+<TITLE>MZP-Assist CT with Maintenance</TITLE>
+<LOCATION>  Sr1 / Yerba Buena St </LOCATION>
+<START>7:17 AM</START>
+<END>7:17AM</END>
+<TYPE>1</TYPE>
+</Points>
+
+
+<Points>
+<LON>-120.19358</LON>
+<LAT>34.5810012817383</LAT>
+<TITLE>CZP-Assist with Construction</TITLE>
+<LOCATION>  Us101 </LOCATION>
+<START>7:25 AM</START>
+<END>8:10AM</END>
+<TYPE>1</TYPE>
+</Points>
+
+
+<Points>
+<LON>-117.07961</LON>
+<LAT>33.0112800598145</LAT>
+<TITLE>Traffic Hazard</TITLE>
+<LOCATION>  I-15 N / Bernardo Center So </LOCATION>
+<START>1:30 PM</START>
+<END>1:40PM</END>
+<TYPE>1</TYPE>
+</Points>
+
+
+<Points>
+<LON>-122.10395</LON>
+<LAT>37.6895408630371</LAT>
+<TITLE>Trfc Collision-1141 Enrt</TITLE>
+<LOCATION>vehicles on the right hand shoulder I238 N / I580 E I238 N Con </LOCATION>
+<START>2:06 PM</START>
+<END>2:43PM</END>
+<TYPE>1</TYPE>
+</Points>
+
+
+<Points>
+<LON>-117.58323</LON>
+<LAT>33.3853988647461</LAT>
+<TITLE>Traffic Hazard</TITLE>
+<LOCATION>  I-5 S / Basilone </LOCATION>
+<START>2:26 PM</START>
+<END>2:26PM</END>
+<TYPE>1</TYPE>
+</Points>
+
+
+<Points>
+<LON>-122.93848</LON>
+<LAT>38.4626502990723</LAT>
+<TITLE>Trfc Collision-No Inj</TITLE>
+<LOCATION>  13730 Green Valley Rd </LOCATION>
+<START>2:34 PM</START>
+<END>2:44PM</END>
+<TYPE>1</TYPE>
+</Points>
+
+
+<Points>
+<LON>-121.91933</LON>
+<LAT>36.986499786377</LAT>
+<TITLE>Trfc Collision-No Inj</TITLE>
+<LOCATION>  6860 Soquel Dr </LOCATION>
+<START>2:36 PM</START>
+<END>3:25PM</END>
+<TYPE>1</TYPE>
+</Points>
+
+
+<Points>
+<LON>0</LON>
+<LAT>0</LAT>
+<TITLE>Trfc Collision-1141 Enrt</TITLE>
+<LOCATION>  101 N/north Anchorage </LOCATION>
+<START>2:34 PM</START>
+<END>2:40PM</END>
+<TYPE>1</TYPE>
+</Points>
+
+
+<Points>
+<LON>-120.60555</LON>
+<LAT>35.6676788330078</LAT>
+<TITLE>Trfc Collision-No Inj</TITLE>
+<LOCATION>  4325 Jardine Rd </LOCATION>
+<START>2:48 PM</START>
+<END>3:19PM</END>
+<TYPE>1</TYPE>
+</Points>
+
+
+<Points>
+<LON>-121.55138</LON>
+<LAT>36.9632301330566</LAT>
+<TITLE>Defective Traffic Signals</TITLE>
+<LOCATION>  Sr25 / Bolsa Rd </LOCATION>
+<START>2:50 PM</START>
+<END>3:01PM</END>
+<TYPE>0</TYPE>
+</Points>
+
+
+<Points>
+<LON>-117.18155</LON>
+<LAT>33.5512886047363</LAT>
+<TITLE>Traffic Hazard</TITLE>
+<LOCATION>  I-215 S / I-15 No (tem) </LOCATION>
+<START>2:50 PM</START>
+<END>2:51PM</END>
+<TYPE>1</TYPE>
+</Points>
+
+
+<Points>
+<LON>-121.69448</LON>
+<LAT>36.832218170166</LAT>
+<TITLE>Trfc Collision-Unkn Inj</TITLE>
+<LOCATION>  Strawberry Canyon Rd / Hidden Valley Rd </LOCATION>
+<START>2:54 PM</START>
+<END>3:34PM</END>
+<TYPE>1</TYPE>
+</Points>
+
+
+<Points>
+<LON>-117.02167</LON>
+<LAT>32.7174606323242</LAT>
+<TITLE>Trfc Collision-1141 Enrt</TITLE>
+<LOCATION>  1253 Purdy St </LOCATION>
+<START>2:53 PM</START>
+<END>3:11PM</END>
+<TYPE>1</TYPE>
+</Points>
+
+
+<Points>
+<LON>-117.25535</LON>
+<LAT>32.9887886047363</LAT>
+<TITLE>Trfc Collision-Unkn Inj</TITLE>
+<LOCATION>left lane affected Media Log </LOCATION>
+<START>4:44 AM</START>
+<END>3:29PM</END>
+<TYPE>1</TYPE>
+</Points>
+
+
+<Points>
+<LON>-118.94185</LON>
+<LAT>34.1907997131348</LAT>
+<TITLE>Traffic Hazard</TITLE>
+<LOCATION>  Sb 101 Jso Cam </LOCATION>
+<START>2:58 PM</START>
+<END>3:02PM</END>
+<TYPE>1</TYPE>
+</Points>
+
+
+<Points>
+<LON>-121.52056</LON>
+<LAT>36.5719413757324</LAT>
+<TITLE>Trfc Collision-No Inj</TITLE>
+<LOCATION>vehicles on the right hand shoulder Us101 N / Chualar </LOCATION>
+<START>2:58 PM</START>
+<END>3:36PM</END>
+<TYPE>1</TYPE>
+</Points>
+
+
+<Points>
+<LON>-117.25526</LON>
+<LAT>32.9882583618164</LAT>
+<TITLE>Trfc Collision-Unkn Inj</TITLE>
+<LOCATION>left lane affected I-5 N / Lomas Santa Fe So </LOCATION>
+<START>3:00 PM</START>
+<END>3:29PM</END>
+<TYPE>1</TYPE>
+</Points>
+
+
+<Points>
+<LON>-122.22258</LON>
+<LAT>37.8514709472656</LAT>
+<TITLE>Traffic Hazard</TITLE>
+<LOCATION>  Sr24 E / Sr24 E Old Tunnel Rd Ofr </LOCATION>
+<START>2:58 PM</START>
+<END>3:02PM</END>
+<TYPE>1</TYPE>
+</Points>
+
+
+<Points>
+<LON>-119.0738</LON>
+<LAT>36.2216606140137</LAT>
+<TITLE>Hit and Run No Injuries</TITLE>
+<LOCATION>  E Fir St / N Foothill Ave </LOCATION>
+<START>2:57 PM</START>
+<END>3:02PM</END>
+<TYPE>1</TYPE>
+</Points>
+
+
+<Points>
+<LON>-116.92719</LON>
+<LAT>32.7500190734863</LAT>
+<TITLE>Trfc Collision-No Inj</TITLE>
+<LOCATION>  Sr54 / Brabham St </LOCATION>
+<START>3:00 PM</START>
+<END>3:01PM</END>
+<TYPE>1</TYPE>
+</Points>
+
+
+<Points>
+<LON>-122.465</LON>
+<LAT>37.6609115600586</LAT>
+<TITLE>Trfc Collision-1141 Enrt</TITLE>
+<LOCATION>vehicles on the right shoulder 0 I280 S </LOCATION>
+<START>3:06 PM</START>
+<END>3:34PM</END>
+<TYPE>1</TYPE>
+</Points>
+
+
+<Points>
+<LON>-117.20631</LON>
+<LAT>32.8904914855957</LAT>
+<TITLE>Trfc Collision-Unkn Inj</TITLE>
+<LOCATION>left lane affected I-805 S / Mira Mesa No </LOCATION>
+<START>3:08 PM</START>
+<END>3:27PM</END>
+<TYPE>1</TYPE>
+</Points>
+
+
+<Points>
+<LON>-119.28262</LON>
+<LAT>34.4566383361816</LAT>
+<TITLE>Hit and Run No Injuries</TITLE>
+<LOCATION>  990 Fairview Rd </LOCATION>
+<START>3:07 PM</START>
+<END>3:07PM</END>
+<TYPE>1</TYPE>
+</Points>
+
+
+<Points>
+<LON>-121.78909</LON>
+<LAT>37.3142318725586</LAT>
+<TITLE>Trfc Collision-No Inj</TITLE>
+<LOCATION>  Aborn Rd / Lyter Way </LOCATION>
+<START>3:07 PM</START>
+<END>3:19PM</END>
+<TYPE>1</TYPE>
+</Points>
+
+
+<Points>
+<LON>-122.02158</LON>
+<LAT>37.5482788085938</LAT>
+<TITLE>Trfc Collision-Unkn Inj</TITLE>
+<LOCATION>  I880 N Blacow Rd Onr / Thornton Ave </LOCATION>
+<START>3:12 PM</START>
+<END>3:32PM</END>
+<TYPE>1</TYPE>
+</Points>
+
+
+<Points>
+<LON>-122.29403</LON>
+<LAT>37.830509185791</LAT>
+<TITLE>Trfc Collision-Unkn Inj</TITLE>
+<LOCATION>vehicles on the right hand shoulder I80 W / I80 W Powell St E Onr </LOCATION>
+<START>3:13 PM</START>
+<END>3:24PM</END>
+<TYPE>1</TYPE>
+</Points>
+
+
+<Points>
+<LON>-121.60519</LON>
+<LAT>37.0534515380859</LAT>
+<TITLE>Trfc Collision-No Inj</TITLE>
+<LOCATION>  Santa Teresa Blvd / Fitzgerald Ave </LOCATION>
+<START>3:13 PM</START>
+<END>3:14PM</END>
+<TYPE>1</TYPE>
+</Points>
+
+
+<Points>
+<LON>-122.16687</LON>
+<LAT>37.8928489685059</LAT>
+<TITLE>Traffic Hazard</TITLE>
+<LOCATION>  Sr24 W / Sr24 W Saint Stephens Dr Ofr </LOCATION>
+<START>3:14 PM</START>
+<END>3:15PM</END>
+<TYPE>1</TYPE>
+</Points>
+
+
+<Points>
+<LON>-120.68348</LON>
+<LAT>35.2397689819336</LAT>
+<TITLE>Traffic Hazard</TITLE>
+<LOCATION>obstacle on the right hand shoulder Us101 N / Us101 N Los Osos Valley Rd Ofr </LOCATION>
+<START>3:14 PM</START>
+<END>3:37PM</END>
+<TYPE>1</TYPE>
+</Points>
+
+
+<Points>
+<LON>-122.06818</LON>
+<LAT>37.6087112426758</LAT>
+<TITLE>Trfc Collision-No Inj</TITLE>
+<LOCATION>vehicles on the right hand shoulder I880 S / I880 S Whipple Rd Ofr </LOCATION>
+<START>3:13 PM</START>
+<END>3:30PM</END>
+<TYPE>1</TYPE>
+</Points>
+
+
+<Points>
+<LON>-121.96444</LON>
+<LAT>36.9824981689453</LAT>
+<TITLE>Trfc Collision-1141 Enrt</TITLE>
+<LOCATION>vehicles on the right hand shoulder Sr1 S / 41st Ave </LOCATION>
+<START>3:19 PM</START>
+<END>3:38PM</END>
+<TYPE>1</TYPE>
+</Points>
+
+
+<Points>
+<LON>-119.29421</LON>
+<LAT>34.3449096679688</LAT>
+<TITLE>MZP-Assist CT with Maintenance</TITLE>
+<LOCATION>  Sr33 S / Sr33 S Canada Larga Rd Ofr </LOCATION>
+<START>6:26 AM</START>
+<END>7:22AM</END>
+<TYPE>1</TYPE>
+</Points>
+
+
+<Points>
+<LON>-122.06091</LON>
+<LAT>37.8911285400391</LAT>
+<TITLE>Traffic Hazard</TITLE>
+<LOCATION>  I680 N / I680 N Olympic Blvd Ofr </LOCATION>
+<START>3:20 PM</START>
+<END>3:22PM</END>
+<TYPE>1</TYPE>
+</Points>
+
+
+<Points>
+<LON>-121.96584</LON>
+<LAT>38.021858215332</LAT>
+<TITLE>Traffic Hazard</TITLE>
+<LOCATION>  Sr4 E San Marco Blvd N Onr / Willow Pass Rd </LOCATION>
+<START>3:20 PM</START>
+<END>3:23PM</END>
+<TYPE>1</TYPE>
+</Points>
+
+
+<Points>
+<LON>-122.05338</LON>
+<LAT>37.9554786682129</LAT>
+<TITLE>Hit and Run No Injuries</TITLE>
+<LOCATION>obstacle on the right shoulder I680 N / I680 N Sr242 N Con </LOCATION>
+<START>3:26 PM</START>
+<END>3:30PM</END>
+<TYPE>1</TYPE>
+</Points>
+
+
+<Points>
+<LON>-122.31723</LON>
+<LAT>37.8233985900879</LAT>
+<TITLE>Traffic Hazard</TITLE>
+<LOCATION>  0 I80 W </LOCATION>
+<START>3:26 PM</START>
+<END>3:28PM</END>
+<TYPE>1</TYPE>
+</Points>
+
+
+<Points>
+<LON>-121.64129</LON>
+<LAT>37.8964614868164</LAT>
+<TITLE>Trfc Collision-Unkn Inj</TITLE>
+<LOCATION>  Sr4 / Marsh Creek Rd </LOCATION>
+<START>3:28 PM</START>
+<END>3:30PM</END>
+<TYPE>1</TYPE>
+</Points>
+
+
+<Points>
+<LON>-122.26782</LON>
+<LAT>37.8282012939453</LAT>
+<TITLE>Traffic Hazard</TITLE>
+<LOCATION>middledle lane affected 0 Sr24 W I580 W Con </LOCATION>
+<START>3:28 PM</START>
+<END>3:31PM</END>
+<TYPE>1</TYPE>
+</Points>
+
+
+<Points>
+<LON>-122.26798</LON>
+<LAT>37.8242797851563</LAT>
+<TITLE>Traffic Hazard</TITLE>
+<LOCATION>#3 lane affected Sr24 E / I980 E </LOCATION>
+<START>3:28 PM</START>
+<END>3:33PM</END>
+<TYPE>1</TYPE>
+</Points>
+
+
+<Points>
+<LON>-122.27832</LON>
+<LAT>37.8054084777832</LAT>
+<TITLE>Traffic Hazard</TITLE>
+<LOCATION>  I980 E 17th St Ofr / 12th St </LOCATION>
+<START>3:31 PM</START>
+<END>3:38PM</END>
+<TYPE>1</TYPE>
+</Points>
+
+
+<Points>
+<LON>-119.7965</LON>
+<LAT>36.7505798339844</LAT>
+<TITLE>Traffic Hazard</TITLE>
+<LOCATION>  Sr180 W / Sr180 W Fulton St Ofr </LOCATION>
+<START>3:32 PM</START>
+<END>3:33PM</END>
+<TYPE>1</TYPE>
+</Points>
+
+
+<Points>
+<LON>-118.19926</LON>
+<LAT>33.8628196716309</LAT>
+<TITLE>Trfc Collision-1141 Enrt</TITLE>
+<LOCATION>vehicles on the right shoulder I-710 S / Long Beach Blvd </LOCATION>
+<START>12:27 PM</START>
+<END>12:36PM</END>
+<TYPE>1</TYPE>
+</Points>
+
+
+<Points>
+<LON>-118.34199</LON>
+<LAT>33.8727798461914</LAT>
+<TITLE>Trfc Collision-Unkn Inj</TITLE>
+<LOCATION>  I-405 N / Artesia Blvd </LOCATION>
+<START>2:52 PM</START>
+<END>3:10PM</END>
+<TYPE>1</TYPE>
+</Points>
+
+
+<Points>
+<LON>-118.3264</LON>
+<LAT>33.8646392822266</LAT>
+<TITLE>Trfc Collision-Unkn Inj</TITLE>
+<LOCATION>  I-405 N / Crenshaw Blvd </LOCATION>
+<START>2:52 PM</START>
+<END>3:10PM</END>
+<TYPE>1</TYPE>
+</Points>
+
+
+<Points>
+<LON>-118.62392</LON>
+<LAT>34.4958000183105</LAT>
+<TITLE>Trfc Collision-Unkn Inj</TITLE>
+<LOCATION>  I-5 S / Lake Hughes Rd </LOCATION>
+<START>2:04 PM</START>
+<END>3:34PM</END>
+<TYPE>1</TYPE>
+</Points>
+
+
+<Points>
+<LON>-118.00285</LON>
+<LAT>34.0646286010742</LAT>
+<TITLE>Traffic Hazard</TITLE>
+<LOCATION>  I-10 E / Wo I-605 </LOCATION>
+<START>2:57 PM</START>
+<END>3:18PM</END>
+<TYPE>1</TYPE>
+</Points>
+
+
+<Points>
+<LON>-118.45511</LON>
+<LAT>34.4026107788086</LAT>
+<TITLE>Traffic Hazard</TITLE>
+<LOCATION>obstacle on the right shoulder Sr14 S / Via Princessa </LOCATION>
+<START>2:13 PM</START>
+<END>2:34PM</END>
+<TYPE>1</TYPE>
+</Points>
+
+
+<Points>
+<LON>-117.88486</LON>
+<LAT>33.9871788024902</LAT>
+<TITLE>Trfc Collision-No Inj</TITLE>
+<LOCATION>  Colima Rd / Otterbein Ave </LOCATION>
+<START>2:15 PM</START>
+<END>2:16PM</END>
+<TYPE>1</TYPE>
+</Points>
+
+
+<Points>
+<LON>-118.27749</LON>
+<LAT>34.1407585144043</LAT>
+<TITLE>Traffic Hazard</TITLE>
+<LOCATION>obstacle on the right shoulder I-5 N / Colorado Blvd </LOCATION>
+<START>3:02 PM</START>
+<END>3:25PM</END>
+<TYPE>1</TYPE>
+</Points>
+
+
+<Points>
+<LON>-118.17894</LON>
+<LAT>33.918830871582</LAT>
+<TITLE>Trfc Collision-No Inj</TITLE>
+<LOCATION>  I-710 S / Mlk </LOCATION>
+<START>2:23 PM</START>
+<END>2:44PM</END>
+<TYPE>1</TYPE>
+</Points>
+
+
+<Points>
+<LON>-118.41204</LON>
+<LAT>34.1939392089844</LAT>
+<TITLE>Trfc Collision-Unkn Inj</TITLE>
+<LOCATION>  12808 Vanowen St </LOCATION>
+<START>2:36 PM</START>
+<END>2:38PM</END>
+<TYPE>1</TYPE>
+</Points>
+
+
+<Points>
+<LON>-118.27539</LON>
+<LAT>34.1537704467773</LAT>
+<TITLE>Trfc Collision-No Inj</TITLE>
+<LOCATION>vehicles on the right shoulder Sr134 E / San Fernando Rd </LOCATION>
+<START>3:08 PM</START>
+<END>3:38PM</END>
+<TYPE>1</TYPE>
+</Points>
+
+
+<Points>
+<LON>-118.30915</LON>
+<LAT>33.859748840332</LAT>
+<TITLE>Hit and Run No Injuries</TITLE>
+<LOCATION>  I-405 S / Western Ave </LOCATION>
+<START>2:38 PM</START>
+<END>3:06PM</END>
+<TYPE>1</TYPE>
+</Points>
+
+
+<Points>
+<LON>-118.13702</LON>
+<LAT>33.8770790100098</LAT>
+<TITLE>Trfc Collision-Unkn Inj</TITLE>
+<LOCATION>vehicles on the right shoulder Sr91 E / Eo Lakewood Blvd </LOCATION>
+<START>3:15 PM</START>
+<END>3:34PM</END>
+<TYPE>1</TYPE>
+</Points>
+
+
+<Points>
+<LON>-118.4138</LON>
+<LAT>33.9853096008301</LAT>
+<TITLE>Traffic Hazard</TITLE>
+<LOCATION>  Sr90 E / S Centinela Ave </LOCATION>
+<START>2:50 PM</START>
+<END>2:53PM</END>
+<TYPE>1</TYPE>
+</Points>
+
+
+<Points>
+<LON>-118.27749</LON>
+<LAT>34.1407585144043</LAT>
+<TITLE>Traffic Hazard</TITLE>
+<LOCATION>obstacle on the right shoulder I-5 N / Colorado Blvd </LOCATION>
+<START>2:49 PM</START>
+<END>3:25PM</END>
+<TYPE>1</TYPE>
+</Points>
+
+
+<Points>
+<LON>-118.3264</LON>
+<LAT>33.8646392822266</LAT>
+<TITLE>Trfc Collision-1141 Enrt</TITLE>
+<LOCATION>  I-405 N / Crenshaw Blvd </LOCATION>
+<START>2:51 PM</START>
+<END>3:10PM</END>
+<TYPE>1</TYPE>
+</Points>
+
+
+<Points>
+<LON>-117.99393</LON>
+<LAT>34.0097503662109</LAT>
+<TITLE>Hit and Run No Injuries</TITLE>
+<LOCATION>  7th Ave / Orange Grove Ave </LOCATION>
+<START>2:52 PM</START>
+<END>2:54PM</END>
+<TYPE>1</TYPE>
+</Points>
+
+
+<Points>
+<LON>-118.47426</LON>
+<LAT>34.1866493225098</LAT>
+<TITLE>Trfc Collision-Unkn Inj</TITLE>
+<LOCATION>vehicles on the right shoulder I-405 S / Victory Blvd </LOCATION>
+<START>3:26 PM</START>
+<END>3:31PM</END>
+<TYPE>1</TYPE>
+</Points>
+
+
+<Points>
+<LON>-118.31086</LON>
+<LAT>34.1788787841797</LAT>
+<TITLE>Traffic Hazard</TITLE>
+<LOCATION>slow lane is blocked I-5 N / E Olive Ave </LOCATION>
+<START>3:27 PM</START>
+<END>3:31PM</END>
+<TYPE>1</TYPE>
+</Points>
+
+
+<Points>
+<LON>-118.43991</LON>
+<LAT>34.038990020752</LAT>
+<TITLE>Trfc Collision-No Inj</TITLE>
+<LOCATION>left lane affected I-405 S / W Olympic Blvd </LOCATION>
+<START>3:28 PM</START>
+<END>3:28PM</END>
+<TYPE>1</TYPE>
+</Points>
+
+
+<Points>
+<LON>-118.09816</LON>
+<LAT>33.9379615783691</LAT>
+<TITLE>Trfc Collision-No Inj</TITLE>
+<LOCATION>  Florence Ave / I-605 N </LOCATION>
+<START>2:56 PM</START>
+<END>3:00PM</END>
+<TYPE>1</TYPE>
+</Points>
+
+
+<Points>
+<LON>-117.75221</LON>
+<LAT>34.0740013122559</LAT>
+<TITLE>Traffic Hazard</TITLE>
+<LOCATION>obstacle on the right shoulder I-10 W / N Garey Ave </LOCATION>
+<START>3:01 PM</START>
+<END>3:38PM</END>
+<TYPE>1</TYPE>
+</Points>
+
+
+<Points>
+<LON>-118.09416</LON>
+<LAT>34.1516799926758</LAT>
+<TITLE>Trfc Collision-No Inj</TITLE>
+<LOCATION>  La Tierra St / N San Gabriel Blvd </LOCATION>
+<START>3:06 PM</START>
+<END>3:23PM</END>
+<TYPE>1</TYPE>
+</Points>
+
+
+<Points>
+<LON>-118.2754</LON>
+<LAT>33.8725700378418</LAT>
+<TITLE>Trfc Collision-1141 Enrt</TITLE>
+<LOCATION>  Sr91 E / S Main St </LOCATION>
+<START>3:08 PM</START>
+<END>3:33PM</END>
+<TYPE>1</TYPE>
+</Points>
+
+
+<Points>
+<LON>-118.13753</LON>
+<LAT>33.987491607666</LAT>
+<TITLE>Trfc Collision-No Inj</TITLE>
+<LOCATION>vehicles on the right shoulder I-5 S / Garfield Ave </LOCATION>
+<START>3:09 PM</START>
+<END>3:29PM</END>
+<TYPE>1</TYPE>
+</Points>
+
+
+<Points>
+<LON>-118.26133</LON>
+<LAT>34.0698318481445</LAT>
+<TITLE>Trfc Collision-1141 Enrt</TITLE>
+<LOCATION>  Us101 N / Glendale Blvd </LOCATION>
+<START>3:09 PM</START>
+<END>3:36PM</END>
+<TYPE>1</TYPE>
+</Points>
+
+
+<Points>
+<LON>-118.43991</LON>
+<LAT>34.038990020752</LAT>
+<TITLE>Trfc Collision-No Inj</TITLE>
+<LOCATION>left lane affected I-405 S / W Olympic Blvd </LOCATION>
+<START>3:09 PM</START>
+<END>3:28PM</END>
+<TYPE>1</TYPE>
+</Points>
+
+
+<Points>
+<LON>-118.6602</LON>
+<LAT>34.1507415771484</LAT>
+<TITLE>Traffic Hazard</TITLE>
+<LOCATION>obstacle on the right shoulder Us101 S / Us101 E Pkwy Calabasas Ofr </LOCATION>
+<START>3:14 PM</START>
+<END>3:17PM</END>
+<TYPE>1</TYPE>
+</Points>
+
+
+<Points>
+<LON>-118.02913</LON>
+<LAT>34.06787109375</LAT>
+<TITLE>Trfc Collision-Unkn Inj</TITLE>
+<LOCATION>  I-10 E / Peck Rd </LOCATION>
+<START>3:18 PM</START>
+<END>3:26PM</END>
+<TYPE>1</TYPE>
+</Points>
+
+
+<Points>
+<LON>-117.84295</LON>
+<LAT>33.9842910766602</LAT>
+<TITLE>Traffic Hazard</TITLE>
+<LOCATION>obstacle on the right shoulder Sr57 S / Pathfinder Rd </LOCATION>
+<START>3:19 PM</START>
+<END>3:20PM</END>
+<TYPE>1</TYPE>
+</Points>
+
+
+<Points>
+<LON>-118.15127</LON>
+<LAT>34.068531036377</LAT>
+<TITLE>Trfc Collision-No Inj</TITLE>
+<LOCATION>  I-10 W / S Fremont Ave </LOCATION>
+<START>3:19 PM</START>
+<END>3:22PM</END>
+<TYPE>1</TYPE>
+</Points>
+
+
+<Points>
+<LON>-118.50109</LON>
+<LAT>34.1700210571289</LAT>
+<TITLE>Trfc Collision-No Inj</TITLE>
+<LOCATION>vehicles on the right shoulder Us101 E Balboa Blvd Onr / Balboa Blvd </LOCATION>
+<START>3:23 PM</START>
+<END>3:23PM</END>
+<TYPE>1</TYPE>
+</Points>
+
+
+<Points>
+<LON>-118.47426</LON>
+<LAT>34.1866493225098</LAT>
+<TITLE>Trfc Collision-Unkn Inj</TITLE>
+<LOCATION>vehicles on the right shoulder I-405 S / Victory Blvd </LOCATION>
+<START>3:25 PM</START>
+<END>3:31PM</END>
+<TYPE>1</TYPE>
+</Points>
+
+
+<Points>
+<LON>-118.31086</LON>
+<LAT>34.1788787841797</LAT>
+<TITLE>Traffic Hazard</TITLE>
+<LOCATION>slow lane is blocked I-5 N / E Olive Ave </LOCATION>
+<START>3:27 PM</START>
+<END>3:31PM</END>
+<TYPE>1</TYPE>
+</Points>
+
+
+<Points>
+<LON>-118.43122</LON>
+<LAT>34.1557388305664</LAT>
+<TITLE>Trfc Collision-1141 Enrt</TITLE>
+<LOCATION>vehicles on the right shoulder Us101 W / Woodman Ave </LOCATION>
+<START>3:29 PM</START>
+<END>3:30PM</END>
+<TYPE>1</TYPE>
+</Points>
+
+
+<Points>
+<LON>-117.84271</LON>
+<LAT>33.9842910766602</LAT>
+<TITLE>Trfc Collision-Unkn Inj</TITLE>
+<LOCATION>left lane affected Sr57 N / Pathfinder Rd </LOCATION>
+<START>3:29 PM</START>
+<END>3:30PM</END>
+<TYPE>1</TYPE>
+</Points>
+
+
+<Points>
+<LON>-117.86444</LON>
+<LAT>34.1066818237305</LAT>
+<TITLE>Trfc Collision-1141 Enrt</TITLE>
+<LOCATION>  255 W Arrow Hwy </LOCATION>
+<START>3:32 PM</START>
+<END>3:34PM</END>
+<TYPE>1</TYPE>
+</Points>
+
+
+<Points>
+<LON>0</LON>
+<LAT>0</LAT>
+<TITLE>Road/Weather Conditions</TITLE>
+<LOCATION>  Media Log </LOCATION>
+<START>12:11 AM</START>
+<END>2:50PM</END>
+<TYPE>1</TYPE>
+</Points>
+
+
+<Points>
+<LON>-118.47632</LON>
+<LAT>34.6670188903809</LAT>
+<TITLE>CLOSURE of a Road</TITLE>
+<LOCATION>  I-5 N / Vista Del Lago Rd </LOCATION>
+<START>8:50 PM</START>
+<END>8:51PM</END>
+<TYPE>1</TYPE>
+</Points>
+
+
+<Points>
+<LON>-120.31525</LON>
+<LAT>37.9779205322266</LAT>
+<TITLE>CZP-Assist with Construction</TITLE>
+<LOCATION>  Sr108 / Standard Rd </LOCATION>
+<START>12:32 PM</START>
+<END>12:32PM</END>
+<TYPE>1</TYPE>
+</Points>
+
+
+<Points>
+<LON>-117.14903</LON>
+<LAT>32.7502899169922</LAT>
+<TITLE>Hit and Run No Injuries</TITLE>
+<LOCATION>  3960 Normal St </LOCATION>
+<START>3:32 PM</START>
+<END>3:33PM</END>
+<TYPE>1</TYPE>
+</Points>
+
+
+<Points>
+<LON>-117.15536</LON>
+<LAT>32.7498512268066</LAT>
+<TITLE>Trfc Collision-No Inj</TITLE>
+<LOCATION>  Sr163 N / Washington So </LOCATION>
+<START>3:33 PM</START>
+<END>3:34PM</END>
+<TYPE>1</TYPE>
+</Points>
+
+
+<Points>
+<LON>0</LON>
+<LAT>0</LAT>
+<TITLE>CLOSURE of a Road</TITLE>
+<LOCATION>  Day Closures 10/1 </LOCATION>
+<START>5:05 AM</START>
+<END>7:52AM</END>
+<TYPE>1</TYPE>
+</Points>
+
+
+<Points>
+<LON>-121.96043</LON>
+<LAT>36.9858894348145</LAT>
+<TITLE>Trfc Collision-No Inj</TITLE>
+<LOCATION>  W Walnut St / Robertson Rd </LOCATION>
+<START>3:34 PM</START>
+<END>3:34PM</END>
+<TYPE>1</TYPE>
+</Points>
+
+
+<Points>
+<LON>-118.20777</LON>
+<LAT>34.0467987060547</LAT>
+<TITLE>Trfc Collision-No Inj</TITLE>
+<LOCATION>  N Soto St / E Cesar E Chavez Ave </LOCATION>
+<START>3:33 PM</START>
+<END>3:35PM</END>
+<TYPE>1</TYPE>
+</Points>
+
+
+<Points>
+<LON>-118.21725</LON>
+<LAT>34.1451110839844</LAT>
+<TITLE>Trfc Collision-Unkn Inj</TITLE>
+<LOCATION>car pool lane is blocked Sr134 W / Sr134 W Sr2 N Con </LOCATION>
+<START>3:34 PM</START>
+<END>3:35PM</END>
+<TYPE>1</TYPE>
+</Points>
+
+
+<Points>
+<LON>-118.2273</LON>
+<LAT>34.1449203491211</LAT>
+<TITLE>Road/Weather Conditions</TITLE>
+<LOCATION>  2901 W Broadway </LOCATION>
+<START>3:13 AM</START>
+<END>3:13AM</END>
+<TYPE>1</TYPE>
+</Points>
+
+
+<Points>
+<LON>-122.50716</LON>
+<LAT>37.8841590881348</LAT>
+<TITLE>Traffic Hazard</TITLE>
+<LOCATION>  Seminary Dr / Seminary Cove Dr </LOCATION>
+<START>3:36 PM</START>
+<END>3:36PM</END>
+<TYPE>1</TYPE>
+</Points>
+
+
+<Points>
+<LON>-122.465</LON>
+<LAT>37.6609115600586</LAT>
+<TITLE>Trfc Collision-1141 Enrt</TITLE>
+<LOCATION>vehicles on the right shoulder 0 I280 S </LOCATION>
+<START>3:10 PM</START>
+<END>3:34PM</END>
+<TYPE>1</TYPE>
+</Points>
+
+
+<Points>
+<LON>-122.29403</LON>
+<LAT>37.830509185791</LAT>
+<TITLE>Trfc Collision-Unkn Inj</TITLE>
+<LOCATION>vehicles on the right hand shoulder I80 W / I80 W Powell St E Onr </LOCATION>
+<START>3:16 PM</START>
+<END>3:24PM</END>
+<TYPE>1</TYPE>
+</Points>
+
+
+<Points>
+<LON>0</LON>
+<LAT>0</LAT>
+<TITLE>SILVER Alert</TITLE>
+<LOCATION>  Sonoma,napa,sol,yolo,sac Co </LOCATION>
+<START>5:28 PM</START>
+<END>7:28AM</END>
+<TYPE>1</TYPE>
+</Points>
+
+
+<Points>
+<LON>-122.05338</LON>
+<LAT>37.9554786682129</LAT>
+<TITLE>Hit and Run No Injuries</TITLE>
+<LOCATION>obstacle on the right shoulder I680 N / I680 N Sr242 N Con </LOCATION>
+<START>3:28 PM</START>
+<END>3:30PM</END>
+<TYPE>1</TYPE>
+</Points>
+
+
+<Points>
+<LON>-122.26782</LON>
+<LAT>37.8282012939453</LAT>
+<TITLE>Traffic Hazard</TITLE>
+<LOCATION>No description 0 Sr24 W I580 W Con </LOCATION>
+<START>3:33 PM</START>
+<END>3:33PM</END>
+<TYPE>1</TYPE>
+</Points>
+
+
+<Points>
+<LON>0</LON>
+<LAT>0</LAT>
+<TITLE>Traffic Hazard</TITLE>
+<LOCATION>  5 N / 805 Gry Chev Older Van With Roof Stuff On Stop On The Rhs </LOCATION>
+<START>3:38 PM</START>
+<END>3:38PM</END>
+<TYPE>1</TYPE>
+</Points>
+
+
+<Points>
+<LON>-131.5454</LON>
+<LAT>41.4422302246094</LAT>
+<TITLE>Traffic Hazard</TITLE>
+<LOCATION>  Kr14152 Nb 14 No Camelot .3 Mi No </LOCATION>
+<START>3:19 PM</START>
+<END>3:20PM</END>
+<TYPE>1</TYPE>
+</Points>
+
+
+<Points>
+<LON>0</LON>
+<LAT>0</LAT>
+<TITLE>Road/Weather Conditions</TITLE>
+<LOCATION>  Barstow Comm Ctr </LOCATION>
+<START>6:21 AM</START>
+<END>6:21AM</END>
+<TYPE>1</TYPE>
+</Points>
+
+
+<Points>
+<LON>-116.79798</LON>
+<LAT>33.9188613891602</LAT>
+<TITLE>Traffic Hazard</TITLE>
+<LOCATION>center divider affected I-10 E Eo / Banning Scales </LOCATION>
+<START>2:36 PM</START>
+<END>2:51PM</END>
+<TYPE>1</TYPE>
+</Points>
+
+
+<Points>
+<LON>-116.18081</LON>
+<LAT>33.7082099914551</LAT>
+<TITLE>Trfc Collision-1141 Enrt</TITLE>
+<LOCATION>  Dillon Rd / SR86 DILLON RD off-ramp </LOCATION>
+<START>2:40 PM</START>
+<END>2:49PM</END>
+<TYPE>1</TYPE>
+</Points>
+
+
+<Points>
+<LON>-116.45822</LON>
+<LAT>33.8490982055664</LAT>
+<TITLE>CZP-Assist with Construction</TITLE>
+<LOCATION>  I-10 E / Date Palm Dr </LOCATION>
+<START>3:18 PM</START>
+<END>3:18PM</END>
+<TYPE>1</TYPE>
+</Points>
+
+
+<Points>
+<LON>-116.80642</LON>
+<LAT>33.9213905334473</LAT>
+<TITLE>Traffic Hazard</TITLE>
+<LOCATION>middledle lane affected I-10 W / Banning Scales </LOCATION>
+<START>3:29 PM</START>
+<END>3:30PM</END>
+<TYPE>1</TYPE>
+</Points>
+
+
+<Points>
+<LON>-116.82842</LON>
+<LAT>33.7368087768555</LAT>
+<TITLE>ANIMAL-Live or Dead Animal</TITLE>
+<LOCATION>  Sr74 W Eo / Cranston Ranger Stn </LOCATION>
+<START>3:31 PM</START>
+<END>3:32PM</END>
+<TYPE>1</TYPE>
+</Points>
+
+
+<Points>
+<LON>-116.76589</LON>
+<LAT>33.9194984436035</LAT>
+<TITLE>CZP-Assist with Construction</TITLE>
+<LOCATION>  I-10 E Eo / Main St Mm 20 </LOCATION>
+<START>6:49 AM</START>
+<END>6:50AM</END>
+<TYPE>1</TYPE>
+</Points>
+
+
+<Points>
+<LON>-117.35367</LON>
+<LAT>33.9988288879395</LAT>
+<TITLE>Traffic Hazard</TITLE>
+<LOCATION>#3 lane affected I-215 S / Sr91 </LOCATION>
+<START>3:35 PM</START>
+<END>3:35PM</END>
+<TYPE>1</TYPE>
+</Points>
+
+
+<Points>
+<LON>0</LON>
+<LAT>0</LAT>
+<TITLE>Road/Weather Conditions</TITLE>
+<LOCATION>  Media Log </LOCATION>
+<START>4:45 AM</START>
+<END>2:16PM</END>
+<TYPE>1</TYPE>
+</Points>
+
+
+<Points>
+<LON>-117.29269</LON>
+<LAT>34.2438201904297</LAT>
+<TITLE>Traffic Hazard</TITLE>
+<LOCATION>  23407 Cloudview Rd </LOCATION>
+<START>1:16 PM</START>
+<END>1:16PM</END>
+<TYPE>1</TYPE>
+</Points>
+
+
+<Points>
+<LON>-117.55534</LON>
+<LAT>33.942699432373</LAT>
+<TITLE>Trfc Collision-1141 Enrt</TITLE>
+<LOCATION>  I-15 N No / 6th St Rv </LOCATION>
+<START>1:49 PM</START>
+<END>2:49PM</END>
+<TYPE>1</TYPE>
+</Points>
+
+
+<Points>
+<LON>-117.4056</LON>
+<LAT>33.7321891784668</LAT>
+<TITLE>Trfc Collision-1141 Enrt</TITLE>
+<LOCATION>  14495 Temescal Canyon Rd </LOCATION>
+<START>1:49 PM</START>
+<END>2:34PM</END>
+<TYPE>1</TYPE>
+</Points>
+
+
+<Points>
+<LON>-117.61323</LON>
+<LAT>33.8806114196777</LAT>
+<TITLE>Trfc Collision-1141 Enrt</TITLE>
+<LOCATION>vehicles on the right hand shoulder 91 FWY E / SERFAS CLUB DR </LOCATION>
+<START>1:58 PM</START>
+<END>3:38PM</END>
+<TYPE>1</TYPE>
+</Points>
+
+
+<Points>
+<LON>-117.46899</LON>
+<LAT>34.3066902160645</LAT>
+<TITLE>Trfc Collision-1141 Enrt</TITLE>
+<LOCATION>  I-15 S / Cajon Scales </LOCATION>
+<START>2:07 PM</START>
+<END>3:32PM</END>
+<TYPE>1</TYPE>
+</Points>
+
+
+<Points>
+<LON>-117.19882</LON>
+<LAT>34.1073684692383</LAT>
+<TITLE>Traffic Hazard</TITLE>
+<LOCATION>  I-210 W / 5th St </LOCATION>
+<START>2:11 PM</START>
+<END>2:11PM</END>
+<TYPE>1</TYPE>
+</Points>
+
+
+<Points>
+<LON>-117.44915</LON>
+<LAT>33.8622207641602</LAT>
+<TITLE>Traffic Hazard</TITLE>
+<LOCATION>  Greentree Dr / Blackburn Rd </LOCATION>
+<START>2:25 PM</START>
+<END>2:26PM</END>
+<TYPE>1</TYPE>
+</Points>
+
+
+<Points>
+<LON>-117.64656</LON>
+<LAT>34.0872611999512</LAT>
+<TITLE>Trfc Collision-1141 Enrt</TITLE>
+<LOCATION>vehicles on the right shoulder I-10 E EO / EUCLID AVE </LOCATION>
+<START>2:44 PM</START>
+<END>3:13PM</END>
+<TYPE>1</TYPE>
+</Points>
+
+
+<Points>
+<LON>-117.30255</LON>
+<LAT>34.121280670166</LAT>
+<TITLE>Trfc Collision-Unkn Inj</TITLE>
+<LOCATION>  I-215 N / Baseline St </LOCATION>
+<START>2:53 PM</START>
+<END>3:12PM</END>
+<TYPE>1</TYPE>
+</Points>
+
+
+<Points>
+<LON>-117.48463</LON>
+<LAT>34.0660705566406</LAT>
+<TITLE>Hit and Run No Injuries</TITLE>
+<LOCATION>obstacle on the right shoulder I-10 W / I-10 W Cherry Ave Ofr </LOCATION>
+<START>3:10 PM</START>
+<END>3:11PM</END>
+<TYPE>1</TYPE>
+</Points>
+
+
+<Points>
+<LON>-117.43955</LON>
+<LAT>34.0127716064453</LAT>
+<TITLE>DOT-Request CalTrans Notify</TITLE>
+<LOCATION>No description Sr60 E / Sr60 E Valley Wy Ofr </LOCATION>
+<START>3:13 PM</START>
+<END>3:13PM</END>
+<TYPE>1</TYPE>
+</Points>
+
+
+<Points>
+<LON>-117.5464</LON>
+<LAT>33.8815383911133</LAT>
+<TITLE>Traffic Hazard</TITLE>
+<LOCATION>obstacle on the right shoulder I-15 N To / Sr91 W Con </LOCATION>
+<START>3:29 PM</START>
+<END>3:36PM</END>
+<TYPE>1</TYPE>
+</Points>
+
+
+<Points>
+<LON>-117.87549</LON>
+<LAT>33.661979675293</LAT>
+<TITLE>Trfc Collision-1141 Enrt</TITLE>
+<LOCATION>  Bristol St S / Campus Dr </LOCATION>
+<START>2:09 PM</START>
+<END>2:12PM</END>
+<TYPE>1</TYPE>
+</Points>
+
+
+<Points>
+<LON>-117.88098</LON>
+<LAT>33.7884712219238</LAT>
+<TITLE>Trfc Collision-1141 Enrt</TITLE>
+<LOCATION>vehicles on the right shoulder 57 FWY S CHAPMAN AV on-ramp / 57 FWY S CHAPMAN AV W on-ramp </LOCATION>
+<START>2:28 PM</START>
+<END>3:24PM</END>
+<TYPE>1</TYPE>
+</Points>
+
+
+<Points>
+<LON>-118.04978</LON>
+<LAT>33.7741584777832</LAT>
+<TITLE>Hit and Run No Injuries</TITLE>
+<LOCATION>obstacle on the right shoulder I-405 S / Sr22 E </LOCATION>
+<START>2:39 PM</START>
+<END>3:26PM</END>
+<TYPE>1</TYPE>
+</Points>
+
+
+<Points>
+<LON>-117.88241</LON>
+<LAT>33.7807083129883</LAT>
+<TITLE>Trfc Collision-1141 Enrt</TITLE>
+<LOCATION>left lane affected I-5 S 22 FWY W connector / 57 FWY S 22 FWY W connector </LOCATION>
+<START>2:48 PM</START>
+<END>3:06PM</END>
+<TYPE>1</TYPE>
+</Points>
+
+
+<Points>
+<LON>-117.75718</LON>
+<LAT>33.6775817871094</LAT>
+<TITLE>Road/Weather Conditions</TITLE>
+<LOCATION>  6681 Marine Way </LOCATION>
+<START>12:12 AM</START>
+<END>3:06PM</END>
+<TYPE>1</TYPE>
+</Points>
+
+
+<Points>
+<LON>-118.0715</LON>
+<LAT>33.7742500305176</LAT>
+<TITLE>Trfc Collision-No Inj</TITLE>
+<LOCATION>vehicles on the right shoulder I-405 S / I-405 S Seal Beach Blvd Onr </LOCATION>
+<START>3:15 PM</START>
+<END>3:31PM</END>
+<TYPE>1</TYPE>
+</Points>
+
+
+<Points>
+<LON>-117.80537</LON>
+<LAT>33.6781883239746</LAT>
+<TITLE>Trfc Collision-No Inj</TITLE>
+<LOCATION>No description 2 Meadowbrook </LOCATION>
+<START>3:16 PM</START>
+<END>3:16PM</END>
+<TYPE>1</TYPE>
+</Points>
+
+
+<Points>
+<LON>-117.67312</LON>
+<LAT>33.5590705871582</LAT>
+<TITLE>Trfc Collision-No Inj</TITLE>
+<LOCATION>  I-5 S / Crown Valley Pkwy </LOCATION>
+<START>3:19 PM</START>
+<END>3:19PM</END>
+<TYPE>1</TYPE>
+</Points>
+
+
+<Points>
+<LON>-117.86138</LON>
+<LAT>33.698429107666</LAT>
+<TITLE>Trfc Collision-No Inj</TITLE>
+<LOCATION>  Sr55 N / Sr55 N Macarthur Blvd E Onr </LOCATION>
+<START>3:18 PM</START>
+<END>3:21PM</END>
+<TYPE>1</TYPE>
+</Points>
+
+
+<Points>
+<LON>-117.97026</LON>
+<LAT>33.8552703857422</LAT>
+<TITLE>Trfc Collision-No Inj</TITLE>
+<LOCATION>left lane affected Sr91 E / Sr91 E Magnolia Av Onr </LOCATION>
+<START>3:27 PM</START>
+<END>3:27PM</END>
+<TYPE>1</TYPE>
+</Points>
+
+
+<Points>
+<LON>-118.08881</LON>
+<LAT>33.7765502929688</LAT>
+<TITLE>Traffic Hazard</TITLE>
+<LOCATION>left lane affected I-405 S / I-605 S I-405 S Con </LOCATION>
+<START>3:34 PM</START>
+<END>3:38PM</END>
+<TYPE>1</TYPE>
+</Points>
+
+
+<Points>
+<LON>-117.88008</LON>
+<LAT>33.9216804504395</LAT>
+<TITLE>Trfc Collision-1141 Enrt</TITLE>
+<LOCATION>left lane affected Sr57 N / Sr57 N Lambert Rd Ofr </LOCATION>
+<START>3:36 PM</START>
+<END>3:37PM</END>
+<TYPE>1</TYPE>
+</Points>
+
+
+<Points>
+<LON>-117.78223</LON>
+<LAT>33.7102394104004</LAT>
+<TITLE>Traffic Hazard</TITLE>
+<LOCATION>  I-5 N / Culver Dr </LOCATION>
+<START>3:10 PM</START>
+<END>3:36PM</END>
+<TYPE>1</TYPE>
+</Points>
+
+
+<Points>
+<LON>-117.97026</LON>
+<LAT>33.8552703857422</LAT>
+<TITLE>Trfc Collision-No Inj</TITLE>
+<LOCATION>left lane affected Sr91 E / Sr91 E Magnolia Av Onr </LOCATION>
+<START>3:28 PM</START>
+<END>3:28PM</END>
+<TYPE>1</TYPE>
+</Points>
+
+
+<Points>
+<LON>-117.83215</LON>
+<LAT>33.8144416809082</LAT>
+<TITLE>Traffic Hazard</TITLE>
+<LOCATION>  Sr55 S / Sr55 S Katella Av Ofr </LOCATION>
+<START>3:33 PM</START>
+<END>3:33PM</END>
+<TYPE>1</TYPE>
+</Points>
+
+
+<Points>
+<LON>-118.08881</LON>
+<LAT>33.7765502929688</LAT>
+<TITLE>Traffic Hazard</TITLE>
+<LOCATION>left lane affected I-405 S / I-605 S I-405 S Con </LOCATION>
+<START>3:37 PM</START>
+<END>3:38PM</END>
+<TYPE>1</TYPE>
+</Points>
+
+
+<Points>
+<LON>-117.88008</LON>
+<LAT>33.9216804504395</LAT>
+<TITLE>Trfc Collision-1141Enrt</TITLE>
+<LOCATION>left lane affected Sr57 N / Sr57 N Lambert Rd Ofr </LOCATION>
+<START>3:37 PM</START>
+<END>3:37PM</END>
+<TYPE>1</TYPE>
+</Points>
+
+
+<Points>
+<LON>-118.4696</LON>
+<LAT>34.1600685119629</LAT>
+<TITLE>Fatality</TITLE>
+<LOCATION>  I-405 S / Us101 S </LOCATION>
+<START>2:37 PM</START>
+<END>3:38PM</END>
+<TYPE>3</TYPE>
+</Points>
+
+
+<Points>
+<LON>-118.46771</LON>
+<LAT>34.172119140625</LAT>
+<TITLE>SIG Alert</TITLE>
+<LOCATION>  I-405 S / Burbank Blvd </LOCATION>
+<START>2:55 PM</START>
+<END>2:55PM</END>
+<TYPE>3</TYPE>
+</Points>
+
+
+<Points>
+<LON>-117.87768</LON>
+<LAT>33.7973098754883</LAT>
+<TITLE>SIG Alert</TITLE>
+<LOCATION>  Sr57 S / I-5 S </LOCATION>
+<START>3:06 PM</START>
+<END>3:08PM</END>
+<TYPE>3</TYPE>
+</Points>
+
+
+</NewDataSet>

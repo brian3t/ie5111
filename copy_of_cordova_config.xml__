@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='utf-8'?>
+    <widget id="com.RCTC.IE511" version="1.4.3" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:gap = "http://phonegap.com/ns/1.0">
+    <!-- versionCode is optional and Android only -->
+    <name>IE511</name>
+    <description>
+        IE511 mobile app
+    </description>
+    <author email="mike@mediabeef.com" href="http://mediabeef.com">
+        Media Beef
+    </author>
+    
+
+    <gap:plugin name="org.apache.cordova.splashscreen" />
+    <gap:plugin name="org.apache.cordova.device" />    
+    <gap:plugin name="org.apache.cordova.network-information" />
+    <gap:plugin name="com.phonegap.plugin.statusbar" />
+    <!--<gap:plugin name="com.adobe.plugins.gaplugin" />-->
+
+    
+	<feature name="http://api.phonegap.com/1.0/notification"/>
+	<feature name="http://api.phonegap.com/1.0/file"/>
+	<feature name="http://api.phonegap.com/1.0/geolocation"/>
+
+    <!-- Customize your app and platform with the preference element. -->
+    <preference name="phonegap-version"           value="3.6.3" />
+    <preference name="orientation"                value="default" />        <!-- all: default means both landscape and portrait are enabled -->
+    <preference name="target-device"              value="universal" />      <!-- all: possible values handset, tablet, or universal -->
+    <preference name="ios-statusbarstyle"         value="black-opaque" />   <!-- ios: black-translucent will appear black because the PhoneGap webview doesn't go beneath the status bar -->
+    <preference name="detect-data-types"          value="true" />           <!-- ios: controls whether data types (such as phone no. and dates) are automatically turned into links by the system -->
+    <!--<preference name="android-minSdkVersion"      value="7" />              &lt;!&ndash; android: MIN SDK version supported on the target device. MAX version is blank by default. &ndash;&gt;-->
+    <preference name="Fullscreen" value="true" />
+    <preference name="webviewbounce" value="false" />
+    <preference name="auto-hide-splash-screen" value="true" />
+
+
+
+
+    <content src="index.html" />
+    <access origin="*" />
+    <access origin="http://*.google-analytics.com"/>
+    <access origin="https://*.google-analytics.com"/>
+    <access origin="http://*.ie511.org"/>
+    <access origin="https://*.ie511.org"/>
+    <access origin="http://*.google.com"/>
+    <access origin="http://*.googleapis.com"/>
+    <access origin="http://*.gstatic.com"/>
+    <access origin="https://*.google.com"/>
+    <access origin="https://*.googleapis.com"/>
+    <access origin="https://*.gstatic.com"/>
+    <access origin="https://maps.googleapis.com"/>
+
+
+
+    <gap:platforms>
+        <gap:platform name="android" />
+        <gap:platform name="ios" />
+    </gap:platforms>
+
+
+    <preference name="StatusBarOverlaysWebView" value="false" />
+    
+
+    <icon src="icon.png" />
+    <icon src="icon-57.png" gap:platform="ios" width="57" height="57"/> 
+    <icon src="icon-72.png" gap:platform="ios" width="72" height="72"/> 
+    <icon src="icon-76.png" gap:platform="ios" width="76" height="76"/> 
+    <icon src="icon-120.png" gap:platform="ios" width="120" height="120"/>
+    <icon src="icon-152.png" gap:platform="ios" width="152" height="152"/>
+
+
+    <preference name="SplashScreen" value="foo" />
+    <preference name="SplashScreenDelay" value="10000" />
+    <preference name="SplashMaintainAspectRatio" value="true|false" />
+
+
+    <splash src="splash.png" />
+
+    <gap:splash src="res/screen/ios/screen-iphone-portrait.png" gap:platform="ios" width="320" height="480" />
+    <gap:splash src="res/screen/ios/screen-iphone-portrait-2x.png" gap:platform="ios" width="640" height="960" />
+    <gap:splash src="res/screen/ios/screen-iphone-portrait-568h-2x.png" gap:platform="ios" width="640" height="1136" />
+    <gap:splash src="res/screen/ios/screen-iphone-landscape.png" gap:platform="ios" width="480" height="320" />
+    <gap:splash src="res/screen/ios/screen-iphone-landscape-2x.png" gap:platform="ios" width="960" height="640" />
+    
+    <gap:splash src="res/screen/ios/screen-ipad-portrait.png" gap:platform="ios" width="768" height="1024" />
+    <gap:splash src="res/screen/ios/screen-ipad-portrait-alt.png" gap:platform="ios" width="768" height="1004" />
+    <gap:splash src="res/screen/ios/screen-ipad-portrait-2x.png" gap:platform="ios" width="1536" height="2008" /> 
+
+    <gap:splash src="res/screen/ios/screen-ipad-landscape.png" gap:platform="ios" width="1024" height="768" />
+    <gap:splash src="res/screen/ios/screen-ipad-landscape-alt1.png" gap:platform="ios" width="1024" height="748" />
+    <gap:splash src="res/screen/ios/screen-ipad-landscape-alt2.png" gap:platform="ios" width="1004" height="768" />
+    <gap:splash src="res/screen/ios/screen-ipad-landscape-2x.png" gap:platform="ios" width="2048" height="1496" />
+    <gap:splash src="res/screen/ios/screen-ipad-landscape-2x-alt.png" gap:platform="ios" width="2008" height="1536" />
+</widget>

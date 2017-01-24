@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+    <link rel="stylesheet" type="text/css" href="css/layout.css" />
+    <link rel="stylesheet" type="text/css" href="css/ie511refresh.min.css" />
+    
+    <link rel="stylesheet" href="css/jquery.mobile.icons.min.css" />
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.0/jquery.mobile.structure-1.4.0.min.css" /> 
+    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script> 
+    <script src="http://code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.js"></script>  
+    
+    <script type="text/javascript">
+        $(document).live( 'pagebeforechange', function() {
+          // hide footer
+          $('[data-role=footer]').hide();
+      });
+        
+        $(document).live( 'pagechange', function() {
+          // show footer
+          $('[data-role=footer]').show();
+      });
+    </script>         
+
+
+    <style type="text/css">
+html, body { height: 100%; }
+.ui-mobile .ui-page { 
+    position: relative;
+    padding-bottom: 0 !important;
+    min-height: 0px !important;
+    overflow: hidden;
+}
+
+.ui-header .logo a {
+    position: absolute;
+    display: block;
+	background-color: #000;
+    background: url(images/logo_home@2x.png) no-repeat center top;
+    background-size: contain;
+    float: left;
+    font-size: 0;
+    height:45px;
+    width:100px;
+    border-collapse: collapse;
+    border: 0px;
+	margin: 4px 0px 0px 4px;
+}
+.ui-header .ui-title {
+	margin-right: 0;
+	margin-left: 1.5em;
+	line-height: 1.5em;
+	font-size: 1.3em;
+	font-weight: normal;
+	padding-left: 1em;
+	color: #fff;
+}
+
+    #mapcanvas {
+        width: 100%;
+        height: 300px;
+        display: block;
+        position: relative;
+        overflow: hidden;
+    }
+
+	/** Traffic Map **/
+	#popupMapOptions form { min-width: 10em; }
+	#popupMapOptions  .ui-field-contain div.ui-slider-switch { width: 4.5em; vertical-align: middle; display: inline-block; }
+	#popupMapOptions  .ui-field-contain label { width: 5.5em; white-space: nowrap; vertical-align: middle; display: inline-block; font-weight: bold; font-size: 14px; }
+	#popupMapLegend options { line-height: 20px; }
+	#popupMapLegend .ui-title, #popupMapOptions .ui-title { color: #ffffff; margin-left: -30px; }
+</style>
+
+
+<title>IE511</title>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBguLsDmN-MeFjoP4iMEWTzeOtLeeBf7_A"></script>
+
+<script type="text/javascript">  
+/*    
+    $.get('http://mwcog.mediabeef.com/mwcog/json?action=ridematch&idCommuter='+idCommuter+'&userName='+userName+"&startAddressIndex="+startAddressIndex+'&endAddressIndex='+endAddressIndex, function(res) {
+
+        matches = res;
+        for(var i=0;i<matches.length;i++)
+        {
+            var match=matches[i];
+            var row ='<li><a href="mailto:'+match.email+'?subject=I found you on Commuter Connections">'+
+            '<h3>'+match.commuterName+'</h3>'+
+            '<p id="no-ellipsis">'+
+            '<p>email:'+match.email+' mobile: '+match.cphone+'</p>'+
+            '<p>start: '+startAddress+' end: '+endAddress+'</p>'+
+            '<p>schedule: 8:00am-5:00pm days: Mon, Tue, Wed, Thu, Fri • flex time: '+match.arriveAfter+' minutes</p>'+
+            '<p>carpool pref: Ride Only vanpool pref: Ride Only</p>'+
+            '<p>gender pref: None smoking pref: None food pref: None</p>'+
+            '</p>'+                       
+            '</a></li>';
+            
+            $("#list ul").append(row);
+            
+            
+            var matchNum = i;
+            var point1 = new google.maps.LatLng(match.match[3], match.match[2]);
+            var point2 = new google.maps.LatLng(match.match[6], match.match[5]);
+            var startMarker = createStartMarker(point1, matchNum);
+            var destnMarker = createDestnMarker(point2, matchNum);
+            displayInfoWindow(startMarker, matchNum, '<br>'+match.commuterName+'<br>Work Hours:8:00:AM - 4:30:PM<br>Home: '+match.hphone+'<br>Work: '+match.wphone);
+            displayInfoWindow(destnMarker, matchNum, '<br>'+match.commuterName+'<br>Work Hours:8:00:AM - 4:30:PM<br>Home: '+match.hphone+'<br>Work: '+match.wphone);
+
+
+        }
+        $("#list ul").listview("refresh");
+
+    }, "json");
+*/            
+
+var map;
+var infowindow = new google.maps.InfoWindow({size: new google.maps.Size(250, 150)});
+
+
+function createStartMarker(point, index) {
+    var marker;
+    var i = index + 1;
+    var imageUrl = "http://mwcog.mediabeef.com/mwcog/includes/images/StartPoint" + i + ".png";
+    marker = new google.maps.Marker({position: point, map: map, draggable: false, icon: imageUrl});
+    return marker;
+}
+
+function createDestnMarker(point, index) {
+    var marker;
+    var i = index + 1;
+    var imageUrl = "http://mwcog.mediabeef.com/mwcog/includes/images/DestinationPoint" + i + ".png";
+    marker = new google.maps.Marker({position: point, map: map, draggable: false, icon: imageUrl});
+    return marker;
+}
+
+function displayMarker(point, mrkImage) {
+
+    var marker;
+    var imageUrl = "http://mwcog.mediabeef.com/mwcog/includes/images/" + mrkImage;
+    marker = new google.maps.Marker({position: point, map: map, draggable: false, icon: imageUrl});
+    return marker;
+}
+
+function displayInfoWindow(marker, count, infoHtl) {
+    count = count + 1;
+    var message = infoHtl;
+    google.maps.event.addListener(marker, 'click', function() {
+        infowindow.setContent(message);
+        infowindow.open(map, marker);
+    });
+}
+
+
+function initialize() 
+{
+    var mapOptions = {
+        zoom: 8,
+        zoomControl: true,
+        panControl: false,
+        mapTypeControl: false,
+        scaleControl: false,
+        streetViewControl: false,
+        overviewMapControl: false,
+        zoomControlOptions: {
+            style: google.maps.ZoomControlStyle.DEFAULT,
+            position: google.maps.ControlPosition.LEFT_TOP
+        },
+        center: new google.maps.LatLng(33.92, -117.42250),
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+    };
+    map = new google.maps.Map(document.getElementById('mapcanvas'), mapOptions);
+    google.maps.event.addListener(map, 'click', function() { infowindow.close(); });
+}
+
+            
+            
+    
+    $(document).bind('pageshow',function(){
+        adjustWindowheight();
+    });
+    $(document).bind('orientationchange',function(){
+        adjustWindowheight(); //#editDiv is the id of the CONTENT part
+    });
+
+    adjustWindowheight = function () 
+	{
+		var height = window.innerHeight - $('#page-header').height() + $('#page-footer').height() - 100;
+		alert($('#mapcanvas').height() + " | " + height);
+			$('#mapcanvas').height(height);
+		//alert(containerHeight + " - "+ windowHeight + " - " + newHeight);					
+		alert($('#mapcanvas').height());
+
+	}
+    </script>
+    
+
+    <!-- detect connection -->    
+    <script type="text/javascript" src="js/reachability.js"></script>
+
+</head>
+<body onload="initialize();"  onunload="GUnload()">
+    <div data-role="page" id="ridematch" data-theme="d">
+        <div data-role="header" id="page-header" data-position="fixed">
+            <div class="logo"><a href="index.html">IE511</a></div>
+            <h1>Real-Time Traffic</h1>
+        </div>
+        
+        
+		<div id="mapcanvas" data-role="content" class="ui-corner-none">Loading...</div>
+        
+        
+        
+        <div data-role="footer" data-tap-toggle="false" id="page-footer" data-position="fixed">
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="index.html" data-rel="back" onclick="trackButton('traffic - back');">Back</a></li>
+                    <li><a href="#popupMapLegend" data-rel="popup" data-position-to="window" data-inline="true">Legend</a></li>
+                    <li><a href="#popupMapOptions" data-rel="popup" data-position-to="window" data-inline="true">Options</a></li>
+                </ul>
+            </div>
+        </div>
+        
+
+
+
+
+        <div data-role="popup" id="popupMapOptions">
+            <div data-role="header" data-theme="d"><h1>Options</h1></div>
+            <div data-role="content" data-theme="b">
+              <form action="#" method="post">
+                <div data-role="fieldcontain">
+                    <select name="msIncident" id="msIncident" data-role="slider" data-mini="true">
+                        <option value="off">Off</option>
+                        <option value="on" selected="selected">On</option>
+                    </select> 
+                    <label for="msIncident">Incidents</label>
+                </div>
+                <!--
+                <div data-role="fieldcontain">
+                    <select name="msCamera" id="msCamera" data-role="slider" data-mini="true">
+                        <option value="off">Off</option>
+                        <option value="on">On</option>
+                    </select> 
+                    <label for="msCamera">Cameras</label>
+                </div>
+            -->
+            <div data-role="fieldcontain">
+                <select name="msCMS" id="msCMS" data-role="slider" data-mini="true">
+                    <option value="off">Off</option>
+                    <option value="on">On</option>
+                </select> 
+                <label for="msCMS">CMS</label>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+
+
+<div data-role="popup" id="popupMapLegend">
+    <div data-role="header" data-theme="d"><h1>Legend</h1></div>
+    <div data-role="content" data-theme="a">
+        <table width="100%" cellpadding="0" cellspacing="0">
+            <tr><td width="50%" valign="top">
+                <div class="options"><img src="images/markergreen.png" width="20" height="20" border="0" />50+ mph</div>
+                <div class="options"><img src="images/markeryellow.png" width="20" height="20" border="0" />25-49 mph</div>
+                <div class="options"><img src="images/markerred.png" width="20" height="20" border="0" />0-24 mph</div>
+                <div class="options"><img src="images/markergray.png" width="20" height="20" border="0" />No Data</div>
+            </td><td valign="top">
+            <div class="options"><img src="images/markersnow.png" width="20" height="20" border="0" />Chain Control</div>
+            <div class="options"><img src="images/markerroadclosed.png" width="20" height="20" border="0" />Road Closed</div>
+            <!-- <div class="options"><img src="images/marker_construction.png" width="20" height="20" border="0" />Construction</div> -->
+        </td>
+    </tr>
+</table>
+</div>
+</div>
+
+
+
+
+
+
+
+</div>
+</body>
+</html>

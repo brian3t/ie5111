@@ -1,0 +1,10 @@
+.header {
+    background: #0d5cab;
+}
+.logo {
+    background: url(../img/logo.png) no-repeat center top;
+    margin: 0 auto;
+    font-size: 0;
+    height:117px;
+    width:213px;
+}

@@ -1,0 +1,78 @@
+<div data-role="page" id="traffic">
+    
+
+
+    <div data-role="header" class="appheader">
+        <div class="logo"><a href="index.html">IE511</a></div>
+        <h1>Real-Time Traffic</h1>
+    </div>
+    <div data-role="content" id="map_canvas">
+        <p class="status">Loading map...</p>
+    </div>
+    <div data-role="footer" data-position="fixed">
+        <div data-role="navbar">
+            <ul>
+                <li><a href="index.html" data-rel="back" onclick="trackButton('traffic - back');">Back</a></li>
+                <li><a href="#popupMapLegend" data-rel="popup" data-position-to="window" data-role="button" data-inline="true">Legend</a></li>
+                <li><a href="#popupMapOptions" data-rel="popup" data-position-to="window" data-role="button" data-inline="true">Options</a></li>
+            </ul>
+        </div>
+    </div>
+
+ 
+
+
+    <div data-role="popup" id="popupMapOptions">
+        <div data-role="header" data-theme="d"><h1>Options</h1></div>
+        <div data-role="content" data-theme="b">
+          <form action="#" method="post">
+            <div data-role="fieldcontain">
+                <select name="msIncident" id="msIncident" data-role="slider" data-mini="true">
+                    <option value="off">Off</option>
+                    <option value="on" selected="selected">On</option>
+                </select> 
+                <label for="msIncident">Incidents</label>
+            </div>
+            <div data-role="fieldcontain">
+                <select name="msCamera" id="msCamera" data-role="slider" data-mini="true">
+                    <option value="off">Off</option>
+                    <option value="on">On</option>
+                </select> 
+                <label for="msCamera">Cameras</label>
+            </div>
+            <div data-role="fieldcontain">
+                <select name="msCMS" id="msCMS" data-role="slider" data-mini="true">
+                    <option value="off">Off</option>
+                    <option value="on">On</option>
+                </select> 
+                <label for="msCMS">CMS</label>
+            </div>
+          </form>
+        </div>
+    </div>
+ 
+
+
+
+    <div data-role="popup" id="popupMapLegend">
+        <div data-role="header" data-theme="d"><h1>Legend</h1></div>
+        <div data-role="content" data-theme="a">
+            <table width="100%" cellpadding="0" cellspacing="0">
+                <tr><td width="50%" valign="top">
+                <div class="options"><img src="images/markergreen.png" width="20" height="20" border="0" />50+ mph</div>
+                <div class="options"><img src="images/markeryellow.png" width="20" height="20" border="0" />25-49 mph</div>
+                <div class="options"><img src="images/markerred.png" width="20" height="20" border="0" />0-24 mph</div>
+                <div class="options"><img src="images/markergray.png" width="20" height="20" border="0" />No Data</div>
+                </td><td valign="top">
+                <div class="options"><img src="images/markersnow.png" width="20" height="20" border="0" />Chain Control</div>
+                <div class="options"><img src="images/markerroadclosed.png" width="20" height="20" border="0" />Road Closed</div>
+                <!-- <div class="options"><img src="images/marker_construction.png" width="20" height="20" border="0" />Construction</div> -->
+                </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+
+
+</div>

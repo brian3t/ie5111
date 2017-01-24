@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1"/>
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; font-src 'self' http://fonts.gstatic.com https://fonts.gstatic.com;
+    script-src 'self' 'unsafe-inline' 'unsafe-eval' https://maps.google.com https://mts0.googleapis.com https://mts1.googleapis.com https://maps.gstatic.com https://maps.googleapis.com https://connect.facebook.net http://google-analytics.com https://google-analytics.com http://ajax.googleapis.com https://ajax.googleapis.com http://cdnjs.cloudflare.com https://cdnjs.cloudflare.com; connect-src 'self' https://maps.googleapis.com http://cloud.ie511.org https://cloud.ie511.org http://dev.ie511.org https://dev.ie511.org http://www.ie511.org https://www.ie511.org http://ie511.org https://ie511.org; img-src 'self' data *; style-src 'self' 'unsafe-inline' http://fonts.googleapis.com https://fonts.googleapis.com; frame-src  gap://ready http://*.facebook.com https://www.facebook.com http://www.facebook.com https://*.facebook.com;
+        ">
+    <!--<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=medium-dpi" />-->
+
+    <script src="js/jquery/jquery-1.8.3.min.js"></script>
+    <script src="js/jquery/jquery.mobile-1.2.1.min.js"></script>
+    <script src="phonegap.js"></script>
+    <script src="cordova.js"></script>
+    <script src="js/url.min.js"></script>
+    <script src="js/index.js"></script>
+
+
+    <link rel="stylesheet" type="text/css" href="css/flat_ui/jquery.mobile.flatui.css"/>
+    <link rel="stylesheet" type="text/css" href="css/themes/ie511.css"/>
+    <link rel="stylesheet" type="text/css" href="css/main.css"/>
+    <!-- detect connection -->
+    <script type="text/javascript" src="js/reachability.js"></script>
+    <style type="text/css">
+        .ui-header .ui-title {
+            margin-left: 1.8em !important;
+        }
+    </style>
+    <title>IE511</title>
+    <!-- maps -->
+    <!--<script type="text/javascript" src="https://maps.google.com/maps/api/js?libraries=geometry"></script>-->
+    <!--<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyBguLsDmN-MeFjoP4iMEWTzeOtLeeBf7_A&sensor=false"></script>-->
+    <!--script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBlOk2RgJC2KXA_Q6S3DiWpMDsfWF13Dho&libraries=geometry" type="text/javascript"></script-->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBY-L-HhMKsNOeMDqH1kJZP7hS3G2SATWQ&libraries=geometry" type="text/javascript"></script>
+    
+</head>
+<body>
+<div data-role="page" id="traffic">
+
+
+    <div data-role="header" class="appheader">
+        <div class="logo"><a href="index.html" data-ajax="false"><!--IE511--></a></div>
+        <h1>Real-Time Traffic</h1>
+    </div>
+    <div data-role="content" id="map_canvas"><p class="status">Loading map...</p></div>
+    <div data-role="footer" data-position="fixed" data-tap-toggle="false">
+        <div data-role="navbar">
+            <ul>
+                <li><a data-ajax="false" href="index.html" onclick="trackButton('traffic - back');">Back</a></li>
+                <li><a href="#popupMapLegend" data-rel="popup" data-position-to="window" data-role="button"
+                       data-inline="true">Legend</a></li>
+                <li><a href="#popupMapOptions" data-rel="popup" data-position-to="window" data-role="button"
+                       data-inline="true">Options</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div data-role="popup" id="popupMapOptions">
+        <div data-role="header" data-theme="a"><h1>Options</h1></div>
+        <div data-role="content" data-theme="a">
+            <form action="#" method="post">
+                <div data-role="fieldcontain">
+                    <select name="msIncident" id="msIncident" data-role="slider" data-mini="true">
+                        <option value="off">Off</option>
+                        <option value="on" selected="selected">On</option>
+                    </select>
+                    <label for="msIncident">Incidents</label>
+                </div>
+                <!--
+                <div data-role="fieldcontain">
+                    <select name="msCamera" id="msCamera" data-role="slider" data-mini="true">
+                        <option value="off">Off</option>
+                        <option value="on">On</option>
+                    </select> 
+                    <label for="msCamera">Cameras</label>
+                </div>
+                -->
+                <div data-role="fieldcontain">
+                    <select name="msCMS" id="msCMS" data-role="slider" data-mini="true">
+                        <option value="off">Off</option>
+                        <option value="on">On</option>
+                    </select>
+                    <label for="msCMS">CMS</label>
+                </div>
+                <div data-role="fieldcontain">
+                    <select name="msLCS" id="msLCS" data-role="slider" data-mini="true">
+                        <option value="off">Off</option>
+                        <option value="on" selected="selected">On</option>
+                    </select>
+                    <label for="msLCS">Closures</label>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    <div data-role="popup" id="popupMapLegend">
+        <div data-role="header" data-theme="a"><h1>Legend</h1></div>
+        <div data-role="content" data-theme="a">
+            <table width="100%" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td width="50%" valign="top">
+                        <div class="options"><img src="images/markergreen.png" width="20" height="20" border="0"/>Light
+                            Traffic
+                        </div>
+                        <div class="options"><img src="images/markeryellow.png" width="20" height="20" border="0"/>Moderate
+                            Traffic
+                        </div>
+                        <div class="options"><img src="images/markerred.png" width="20" height="20" border="0"/>Heavy
+                            Traffic
+                        </div>
+                        <div class="options"><img src="images/markergray.png" width="20" height="20" border="0"/>No Data
+                        </div>
+                        <div class="options"><img src="images/marker_incident.png" width="20" height="20" border="0"/>Incident
+                        </div>
+                        <div class="options"><img src="images/marker_sigalert.png" width="20" height="20" border="0"/>Sig
+                            Alert
+                        </div>
+                    </td>
+                    <td valign="top">
+                        <div class="options"><img src="images/marker_snow.png" width="20" height="20" border="0"/>Chain
+                            Control
+                        </div>
+                        <div class="options"><img src="images/marker_roadclosed.png" width="20" height="20" border="0"/>Road
+                            Closed
+                        </div>
+
+                        <div class="options"><img src="images/marker_construction.png" width="20" height="20"
+                                                  border="0"/>Construction
+                        </div>
+                        <div class="options"><img src="images/marker_cms.png" width="20" height="20" border="0"/>Message
+                            Sign
+                        </div>
+                        <div class="options"><img src="images/marker_lcs.png" width="20" height="20" border="0"/>Closures
+                        </div>
+
+
+                        <!-- <div class="options"><img src="images/marker_construction.png" width="20" height="20" border="0" />Construction</div> -->
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="js/googlemap.js"></script>
+    <!--<script type="text/javascript" src="js/map.js"></script>-->
+    <script src="js/markermanager.js"></script>
+    <script type="text/javascript" src="js/downloadxml.js"></script>
+    <script type="text/javascript" src="js/chaincontrols.js"></script>
+    <script type="text/javascript" src="js/traveltimes.js"></script>    
+    <script type="text/javascript">
+        $(document).on("pageinit", "#traffic", function (event) {
+
+            currentPageID = "traffic";
+
+//	map = new GoogleMap();
+            //navigator.geolocation.getCurrentPosition(map.initialize);
+//	map.initialize();
+            var saved_coords = JSON.parse(localStorage.getItem("saved_coords"));
+
+            if (saved_coords !== null && saved_coords.hasOwnProperty('coords')) {
+                initializeMap("map_canvas", saved_coords.coords);
+            }
+            else {
+                coords = {};//map will use INITIAL_LONGITUDE INITIAL_LATITUDE
+                if (INITIAL_LATITUDE !== null) {
+                    coords.latitude = INITIAL_LATITUDE;
+                }
+                if (INITIAL_LONGITUDE !== null) {
+                    coords.longitude = INITIAL_LONGITUDE;
+                }
+                initializeMap("map_canvas", coords);
+            }
+
+            $("#popupMapOptions").on({
+                popupbeforeposition: function () {
+                    //bind events
+                    $("#popupMapOptions #msIncident").bind("change", function (event, ui) {
+                        mgrIncidents.toggle();
+                    });
+                    $("#popupMapOptions #msCamera").bind("change", function (event, ui) {
+                        mgrCamera.toggle();
+                    });
+                    $("#popupMapOptions #msCMS").bind("change", function (event, ui) {
+                        mgrCms.toggle();
+                    });
+                    $("#popupMapOptions #msLCS").bind("change", function (event, ui) {
+                        mgrLCS.toggle();
+                    });
+
+                },
+                popupafterclose: function () {
+                    $("#popupMapOptions #msIncident").unbind("change");
+                    $("#popupMapOptions #msCamera").unbind("change");
+                    $("#popupMapOptions #msCMS").unbind("change");
+                    $("#popupMapOptions #msLCS").unbind("change");
+                }
+            });
+//    var t = setTimeout(checkForMapLoad, 3000);
+
+        });
+
+        function checkForMapLoad() {
+            if ($('#map_canvas').html() == '<p class="status">Loading map...</p>') {
+                document.location = "traffic2.html";
+            } else {
+                // only load notification after the map loads
+                // this way we don't get the flood warnings twice
+                floodGateNotification();
+            }
+        }
+
+    </script>
+
+</div>
+</body>
+</html>
